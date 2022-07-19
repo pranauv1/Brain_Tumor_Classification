@@ -76,7 +76,9 @@ gi_list_array = list(map(lambda x: np.asarray(Image.open(x).resize((32,32))),gi_
 me_list_array = list(map(lambda x: np.asarray(Image.open(x).resize((32,32))),me_list))
 no_list_array = list(map(lambda x: np.asarray(Image.open(x).resize((32,32))),no_list))
 pi_list_array = list(map(lambda x: np.asarray(Image.open(x).resize((32,32))),pi_list))
-yes_list_array = list(map(lambda x: np.asarray(Image.open(x).resize((32,32))),yes_list))
+
+#The yes_list containes some gray scaled images, so we need to convert them into RGB and then resize them
+yes_list_array = list(map(lambda x: np.asarray(Image.open(x).convert('RGB').resize((32,32))),yes_list))
 
 
 #Balancing the data
