@@ -93,7 +93,7 @@ brain_df_0= pd.DataFrame({'image':gi_list_balanced,'label':0})
 brain_df_1= pd.DataFrame({'image':me_list_balanced, 'label':1})
 brain_df_2= pd.DataFrame({'image':no_list_balanced, 'label':2})
 brain_df_3= pd.DataFrame({'image':pi_list_balanced, 'label':3})
-brain_df_4= pd.DataFrame({'image':pi_list_balanced, 'label':4})
+brain_df_4= pd.DataFrame({'image':yes_list_balanced, 'label':4})
 
 
 #Converting those DataFrames into a single new DataFrame
